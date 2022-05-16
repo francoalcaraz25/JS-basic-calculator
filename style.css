@@ -8,7 +8,7 @@ body {
     align-items: center;
     justify-content: center;
 
-    background-color: black;
+    background-color: #111;
 }
 
 .calculatorApp {
@@ -67,7 +67,15 @@ body {
     font-size: 20px;
     font-weight: 500;
 
+    border: none;
+    box-shadow: 1px 1px 1px black;
+
     user-select: none;
+}
+.btn:active {
+    filter: brightness(80%);
+    box-shadow: -1px -1px 1px black;
+    transform: translate(1px, 1px);
 }
 
 .operator, .function {
